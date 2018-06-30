@@ -1,0 +1,34 @@
+/* ELEMENTS TO REMOVE FROM DISPLAY */
+#pagelet_ego_pane, /* recommended for you and sponsored content */
+#u_0_1t, /* right side bar instant chat people online */
+#u_0_1u, /* right side bar instant chat prompt */
+#u_0_1v, /* right side bar instant chat prompt */
+#pagelet_rhc_footer, /* select language prompt, and Facebook copyright footer */ 
+#createNav, /* create shortcut on the bottom left */
+#appsNav, /* explore bar on the left */
+#pagelet_trending_tags_and_topics, /* trending topics */
+#stories_pagelet_rhc, /* stories */
+#topnews_main_stream_408239535924329, /* newsfeed */
+.fbChatSidebarBody,
+#u_0_1w,
+#pagelet_gaming_destination_rhc /*gaming sidebar*/
+{
+	display: none !important;
+}
+
+/* remove border from where the chat sidebar was */
+.fbChatSidebar {
+	border-left: none !important;
+}
+
+/* make the background white instead of the usual depressing grey */
+#globalContainer,
+#contentCol,
+._5vb_, 
+._5vb_ #contentCol,
+#u_0_1s,
+._4oes,
+._51x_,
+body {
+    background-color: white !important;
+}
