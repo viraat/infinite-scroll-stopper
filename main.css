@@ -3,12 +3,13 @@
 #u_0_1t, /* right side bar instant chat people online */
 #u_0_1u, /* right side bar instant chat prompt */
 #u_0_1v, /* right side bar instant chat prompt */
-#pagelet_rhc_footer, /* select language prompt, and Facebook copyright footer */ 
+#pagelet_rhc_footer, /* select language prompt, and Facebook copyright footer */
 #createNav, /* create shortcut on the bottom left */
 #appsNav, /* explore bar on the left */
-#pagelet_trending_tags_and_topics, /* trending topics */
+/* #pagelet_trending_tags_and_topics, /* trending topics */ */
 #stories_pagelet_rhc, /* stories */
 #topnews_main_stream_408239535924329, /* newsfeed */
+#rightcol,
 .fbChatSidebarBody,
 #u_0_1w,
 #pagelet_gaming_destination_rhc /*gaming sidebar*/
@@ -21,10 +22,19 @@
 	border-left: none !important;
 }
 
+#scrolloffmenu{
+	z-index: 10 !important;
+}
+/* #pagelet_bluebar {
+	-webkit-filter: grayscale(100%);
+   filter: grayscale(100%);
+} */
+
 /* make the background white instead of the usual depressing grey */
+
 #globalContainer,
 #contentCol,
-._5vb_, 
+._5vb_,
 ._5vb_ #contentCol,
 #u_0_1s,
 ._4oes,
