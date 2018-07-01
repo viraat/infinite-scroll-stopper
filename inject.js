@@ -21,7 +21,7 @@ function main() {
 
 
 
-  var checkifsure = setInterval(checkusure, 1000*10)
+  var checkifsure = setInterval(checkusure, 1000*20)
 
   function checkusure() {
     disableScroll();
@@ -39,66 +39,13 @@ function main() {
     }
   }
 
-  // var div = document.createElement('div');
-	// div.style.position = 'relative';
-	// div.style.top = 0;
-	// div.style.right = 0;
-	// // div.textContent = 'Injected!';
-	// div.setAttribute("id", "scrolloffmenu");
-  //
-	// var enable_button = document.createElement('button');
-	// enable_button.textContent = 'dyou wanna be a lame and enable scrolling again cuz ';
-  // enable_button.id = "enable";
-	// div.appendChild(enable_button);
-  //
-	// var disable_button = document.createElement('button');
-	// disable_button.textContent = 'yo dude disable scrolling';
-  // disable_button.id = "disable";
-	// div.appendChild(disable_button);
-  //
-  // var status = document.createElement('div');
-  // status.id = "status";
-  // div.appendChild(status);
-	// document.body.appendChild(div);
 
-  // console.log(document.getElementsByClassName("_45mq"))
-  // document.getElementsByClass("_45mq")[0].appendChild(div2);
   var div2 = document.createElement('span');
   div2.style.position = 'relative';
   div2.style.top = 0;
   div2.style.right = 0;
   div2.setAttribute("id2", "wbwgrid");
 
-
-
-  /*var myTableRows = [
-      [{"th":"."},{"th":"."},{"th":"."},{"th":"."},{"th":"."},{"th":"."},{"th":"."},{"th":"."},{"th":"."},{"th":"."}],
-      [{"th":"."},{"th":"."},{"th":"."},{"th":"."},{"th":"."},{"th":"."},{"th":"."},{"th":"."},{"th":"."},{"th":"."}],
-      [{"th":"."},{"th":"."},{"th":"."},{"th":"."},{"th":"."},{"th":"."},{"th":"."},{"th":"."},{"th":"."},{"th":"."}],
-      [{"th":"."},{"th":"."},{"th":"."},{"th":"."},{"th":"."},{"th":"."},{"th":"."},{"th":"."},{"th":"."},{"th":"."}],
-      [{"th":"."},{"th":"."},{"th":"."},{"th":"."},{"th":"."},{"th":"."},{"th":"."},{"th":"."},{"th":"."},{"th":"."}],
-      [{"th":"."},{"th":"."},{"th":"."},{"th":"."},{"th":"."},{"th":"."},{"th":"."},{"th":"."},{"th":"."},{"th":"."}],
-      [{"th":"."},{"th":"."},{"th":"."},{"th":"."},{"th":"."},{"th":"."},{"th":"."},{"th":"."},{"th":"."},{"th":"."}],
-      [{"th":"."},{"th":"."},{"th":"."},{"th":"."},{"th":"."},{"th":"."},{"th":"."},{"th":"."},{"th":"."},{"th":"."}],
-      [{"th":"."},{"th":"."},{"th":"."},{"th":"."},{"th":"."},{"th":"."},{"th":"."},{"th":"."},{"th":"."},{"th":"."}],
-      [{"th":"."},{"th":"."},{"th":"."},{"th":"."},{"th":"."},{"th":"."},{"th":"."},{"th":"."},{"th":"."},{"th":"."}]
-  ];
-
-  var table = document.createElement("table");
-  for(var rowIndex in myTableRows) {
-      var row = document.createElement("tr");
-      for(var colIndex in myTableRows[rowIndex]) {
-          for(var tag in myTableRows[rowIndex][colIndex]) {
-              var cell = document.createElement(tag);
-              var cellContents = document.createTextNode(myTableRows[rowIndex][colIndex][tag]);
-              cell.appendChild(cellContents);
-              row.appendChild(cell);
-          }
-      }
-      table.appendChild(row);
-  }
-  document.getElementsByClassName("_45mq")[0].appendChild(table);
-  table.id = "wbwtable"*/
 
 
   var newtable = document.createElement('div');
@@ -108,17 +55,13 @@ function main() {
 
   newtable.textContent= "";
 
-  /*var newtable = tableCreate();*/
-
-
-
 
 
   document.getElementsByClassName("_45mq")[0].appendChild(newtable);
   newtable.id = 'tabble'
 
   var i = 0;
-  var tableUpdate = setTimeout(myUpdate, 1000, i);
+  var tableUpdate = setTimeout(myUpdate, 1000*10, i);
 
 }
 
@@ -208,7 +151,7 @@ function tableCreate() {
 function myUpdate(i) {
   document.getElementsByClassName('updategriddy')[i].innerHTML += '.';
     if (i < 100){
-      setTimeout(myUpdate, 1000, i+1)
+      setTimeout(myUpdate, 1000*10, i+1)
         }
     }
 
