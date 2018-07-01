@@ -9,7 +9,7 @@
 	 {
 		 "matches": ["https://www.facebook.com/*"],
 	 	"css": ["main.css"],
-    "js": ["inject.js"]
+	 	"js": ["inject.js"]
 	 }
  ],
  "page_action": {

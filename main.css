@@ -1,25 +1,18 @@
-/* ELEMENTS TO REMOVE FROM DISPLAY */
-#pagelet_ego_pane, /* recommended for you and sponsored content */
-#u_0_1t, /* right side bar instant chat people online */
-#u_0_1u, /* right side bar instant chat prompt */
-#u_0_1v, /* right side bar instant chat prompt */
-#pagelet_rhc_footer, /* select language prompt, and Facebook copyright footer */
-#createNav, /* create shortcut on the bottom left */
-#appsNav, /* explore bar on the left */
-/* #pagelet_trending_tags_and_topics, /* trending topics */ */
-#stories_pagelet_rhc, /* stories */
-#topnews_main_stream_408239535924329, /* newsfeed */
-#rightcol,
-.fbChatSidebarBody,
-#u_0_1w,
-#pagelet_gaming_destination_rhc /*gaming sidebar*/
+#mercurymessagesCountValue,
+#jewelCount
+{
+	background-color: #9da1a7
+}
+
+._1-ia,
+/*._45mq,*/
+.fbChatSidebar
 {
 	display: none !important;
 }
 
-/* remove border from where the chat sidebar was */
-.fbChatSidebar {
-	border-left: none !important;
+#scrolloffmenu{
+	z-index: 10 !important;
 }
 
 #scrolloffmenu{
@@ -39,6 +32,33 @@
 #u_0_1s,
 ._4oes,
 ._51x_,
+
 body {
     background-color: white !important;
+}
+
+
+/*table, th, td{
+	border: 1px solid black;
+	padding: 12px;
+	color: blue;
+}*/
+
+#testest{
+	margin-top: 350px;
+}
+
+#tabble{
+    border: 0px solid black;
+    table-layout: fixed;
+    border-collapse: collapse;
+    width: 40px;
+    text-align: center;
+
+}
+
+th, td {
+    border: 1px solid black;
+    width: 5px;
+    text-align: center;
 }
