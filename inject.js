@@ -3,7 +3,7 @@
 
 function main() {
 
-  // change facebook 
+  // change facebook
 
   var e = document.getElementById("pageTitle");
   e.id = "somethingelse";
@@ -18,31 +18,48 @@ function main() {
 
 	// alert('run!')
 	// just place a div at top right,.
-	
 
 
 
-  var div = document.createElement('div');
-	div.style.position = 'relative';
-	div.style.top = 0;
-	div.style.right = 0;
-	// div.textContent = 'Injected!';
-	div.setAttribute("id", "scrolloffmenu");
+  var checkifsure = setInterval(checkusure, 1000*10)
 
-	var enable_button = document.createElement('button');
-	enable_button.textContent = 'dyou wanna be a lame and enable scrolling again cuz '; 
-  enable_button.id = "enable";
-	div.appendChild(enable_button);
+  function checkusure() {
+    disableScroll();
+    var usure = confirm('Are you sure you want to continue scrolling?');
+    if (usure) {
+      enableScroll();
+      alert('Well, you can continue for now.. I will remind you again soon');
+    }
+    else {
+      var close = confirm('Awesome, now go slay! Do you want me to close the window for you?');
+      if (confirm) {
+        var ww = window.open(window.location, '_self');
+        ww.close();
+      }
+    }
+  }
 
-	var disable_button = document.createElement('button');
-	disable_button.textContent = 'yo dude disable scrolling';
-  disable_button.id = "disable";
-	div.appendChild(disable_button);
-
-  var status = document.createElement('div');
-  status.id = "status";
-  div.appendChild(status);
-	document.body.appendChild(div);
+  // var div = document.createElement('div');
+	// div.style.position = 'relative';
+	// div.style.top = 0;
+	// div.style.right = 0;
+	// // div.textContent = 'Injected!';
+	// div.setAttribute("id", "scrolloffmenu");
+  //
+	// var enable_button = document.createElement('button');
+	// enable_button.textContent = 'dyou wanna be a lame and enable scrolling again cuz ';
+  // enable_button.id = "enable";
+	// div.appendChild(enable_button);
+  //
+	// var disable_button = document.createElement('button');
+	// disable_button.textContent = 'yo dude disable scrolling';
+  // disable_button.id = "disable";
+	// div.appendChild(disable_button);
+  //
+  // var status = document.createElement('div');
+  // status.id = "status";
+  // div.appendChild(status);
+	// document.body.appendChild(div);
 
   // console.log(document.getElementsByClassName("_45mq"))
   // document.getElementsByClass("_45mq")[0].appendChild(div2);
@@ -95,7 +112,7 @@ function main() {
 
 
 
-  
+
 
   document.getElementsByClassName("_45mq")[0].appendChild(newtable);
   newtable.id = 'tabble'
@@ -171,13 +188,13 @@ function tableCreate() {
     for (var i = 0; i < 10; i++) {
         var tr = document.createElement('tr');
         for (var j = 0; j < 10; j++) {
-             
+
                 var td = document.createElement('td');
                 td.className = 'updategriddy';
                 td.appendChild(document.createTextNode(''))
                 /*i == 1 && j == 1 ? td.setAttribute('rowSpan', '2') : null;*/
                 tr.appendChild(td)
-            
+
         }
         tbdy.appendChild(tr);
     }
